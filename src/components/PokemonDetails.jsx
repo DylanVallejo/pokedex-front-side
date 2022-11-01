@@ -11,7 +11,9 @@ const  PokemonDetails =  () => {
     
     const {idPokemon} = useParams();
     const [data, setData] = useState([]);  
-    const url = `http://localhost:8000/api/${idPokemon}`
+    const url = `https://pkmserver.herokuapp.com/api/${idPokemon}`
+    // const url = `http://localhost:8000/api/${idPokemon}`
+    
     const navigate = useNavigate();
     
     
