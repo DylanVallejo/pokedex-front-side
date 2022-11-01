@@ -14,7 +14,7 @@ const Main =  () => {
     
     
     useEffect(()=>{
-        axios.get("http://localhost:8000/api")
+        axios.get("https://pkmserver.herokuapp.com/api")
             .then(res=>{
                 setPokemon(res.data)
             })      
