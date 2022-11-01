@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.infoMainContainer{
+    margin:  auto;
+    height: 84vh;    
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+    padding: auto;
+
+}
+.detailImgContainer{
+    margin: auto;
+    padding: 20px;
+    border-radius: 50px 25px 50px 25px;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+.detailImg{
+    height: 200px;
+    filter: drop-shadow(0 0 0.75rem rgb(66, 59, 60));
+    margin: auto;
+}
+.detailInfoContainer{
+    text-align: left;
+    margin: auto auto auto 10px;
+    padding: 20px;
+}
+th, td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+.tableData{
+    border-collapse: collapse;
+    
+}
+table > tbody > tr:first-child > th:first-child{
+    border: none;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+}
+.spanLines{
+    color: crimson;
+    padding: 3px;
+    
+}
+.descriptionPkmn{
+    font-weight: 700;
+}
+.detailBtn{
+    margin: 10px auto;
+    width: 100px;
+    background-color: rgb(250, 252, 182);
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    height: 25px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.detailBtn:hover{
+    background-color: #62f754;
+    box-shadow: 0px 7px 10px rgba(46, 229, 157, 0.4);
+    transform: translateX(7px);
+    -webkit-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+
+@media only screen and (min-width:700px) and (max-width: 970px) {
+    .infoMainContainer{
+        height: 82vh;
+        padding: 10px 0 0 0;
+        display: flex;
+        flex-wrap: nowrap;
+        
+    }
+}
+
+@media only screen and (min-width:401px) and (max-width: 699px) {
+    .infoMainContainer{
+        height: 88.1vh;
+        padding: 10px;
+    }
+    .tableData{
+        width: 350px;
+    }
+}
